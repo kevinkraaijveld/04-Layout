@@ -1,0 +1,552 @@
+/*  Kevin Kraaijveld CSS /layout
+============================================================================
+
+1. Algemene CSS
+2. Header
+3. Navigation
+4. Copyright
+5. Overige CSS
+
+============================================================================ */
+
+
+/* 1. Algemene CSS
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+  background-color: #b6ccd8;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+h1{
+ font: 40px 'Raleway', sans-serif;
+ color: #47484c !important;
+ padding: 7px;
+ text-align: center;
+}
+h2{
+  font: 30px 'Raleway', sans-serif;
+  color: #47484c;
+  padding: 5px;
+}
+h3{
+  font: 20px 'Raleway', sans-serif;
+  color: #FF8001;
+  padding: 3px;
+}
+
+a {
+  color: #FF5F02;
+  text-decoration: none;
+}
+a:hover{
+  color:#4c4c4b;
+}
+
+/* 2. HEADER
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#kev-header{
+  display: block;
+  border-bottom: 1px solid #444;
+  height: 200px;
+  width:100%;
+  background-color: #a1bece;
+}
+
+
+/* KK: LOGO
+---------------------------------------------------------------------------- */
+
+#kev-logo {
+  height: 100%;
+  padding: 22px 0 0;
+  float: left;
+  margin-left: 135px;
+}
+
+img.tilt{
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+img.tilt:hover {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.kev-slogan {
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* KK: NAVIGATION
+---------------------------------------------------------------------------- */
+
+nav#menu {
+  position: relative;
+  top: 60px;
+  float: right;
+  width: 75%;
+}
+
+nav#menu ul {
+  height: 39px;
+  background: -webkit-linear-gradient(left, rgb(255, 171, 45), rgb(255, 102, 0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgb(255, 171, 45), rgb(255, 102, 0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgb(255, 171, 45), rgb(255, 102, 0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgb(255, 171, 45), rgb(255, 102, 0)); /* Standard syntax (must be last) */
+}
+
+nav#menu li {
+  display: inline;
+  padding: 6px 0px 6px 0px;
+  font-size:20px;
+  margin: 2px;
+}
+
+nav#menu ul li:hover{
+  transition:color 0.3s linear 0s;
+  background-color: #ff5f02;
+}
+
+li a {
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #000;
+}
+
+li.current.active{
+  background-color: #ff5202;
+}
+
+li.current.active a{
+  color: #000;
+}
+
+li.current.active:hover{
+  background-color: #ff8d02!important;
+}
+
+#kev-headerwrap {
+  margin-bottom: 9px;
+  padding-top: 7px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #444;
+}
+
+/* KK: Dropdown-menu
+---------------------------------------------------------------------------- */
+
+.dropbtn {
+  background-color: transparent;
+  border:none;
+  padding: 8px 16px 14px 16px;
+  font: 20px 'Raleway', sans-serif;
+}
+
+button#active{
+  background-color: #FF5F02;
+  padding-bottom: 7px;
+}
+
+.dropbtn a{
+  color: #000;
+  text-align: center;
+
+  text-decoration: none;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  top:53px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #FF5F02
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+button:focus{
+  outline:0;
+}
+
+
+
+/* KK: Main
+---------------------------------------------------------------------------- */
+
+main{
+ clear:both;
+}
+
+section{
+  margin-left: 8%;
+  float:left;
+  width:70%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #8db4c9;
+  padding: 10px;
+
+}
+article{
+  width:47%;
+  padding:10px;
+}
+
+aside{
+  float:right;
+  width:14%;
+  padding:0 35px 0 20px;
+  border-left: 1px solid #000;
+}
+article.box-1{
+  order: 1;
+}
+article.box-2{
+  order: 2;
+}
+article.box-3{
+  order: 3;
+}
+article.box-4{
+  order: 4;
+}
+hr{
+  border: 1px groove #000;
+}
+
+/* KK: Advert
+---------------------------------------------------------------------------- */
+.advert{
+  animation:  advert 5s linear infinite;
+  animation-fill-mode:forwards;
+  -webkit-animation:  advert 5s linear infinite;
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation:  advert 5s linear infinite;
+  -moz-animation-fill-mode:forwards;
+  -ms-animation:  advert 5s linear infinite;
+  -ms-animation-fill-mode: forwards;
+  background-image: url("../images/DSCN1511.png");
+  height: 156px;
+  width: 156px;
+  background-position: 0 0px;
+  background-repeat: no-repeat;
+}
+
+@keyframes advert{
+    0%   {background-position: 0px 0px;}
+    30%  {background-position: 0px 0px;}
+    40%  {background-position: -156px 0px;}
+    80%  {background-position: -156px 0px;}
+    90%  {background-position: 0px 0px;}
+    100% {background-position: 0px 0px;}
+}
+
+.advtitle{
+    font-size: 27px;
+    animation:  disco-animation 8s ease infinite;
+    animation-fill-mode:forwards;
+    -webkit-animation:  disco-animation 8s ease infinite;
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation:  disco-animation 8s ease infinite;
+    -moz-animation-fill-mode:forwards;
+    -ms-animation:  disco-animation 8s ease infinite;
+    -ms-animation-fill-mode: forwards;
+    margin-bottom: 0px;
+}
+@keyframes disco-animation {
+      0% {color: #ff008c;}
+     10% {color: #ff0000;}
+     20% {color: #ffe900;}
+     30% {color: #000cff;}
+     40% {color: #fff200;}
+     50% {color: #2eff00;}
+     60% {color: #00ffed;}
+     70% {color: #e500ff;}
+     80% {color: #ff8300;}
+     90% {color: #0099ff;}
+     100% {color: #ff0c00;}
+}
+@-webkit-keyframes disco-animation {
+      0% {color: #ff008c;}
+     10% {color: #ff0000;}
+     20% {color: #ffe900;}
+     30% {color: #000cff;}
+     40% {color: #fff200;}
+     50% {color: #2eff00;}
+     60% {color: #00ffed;}
+     70% {color: #e500ff;}
+     80% {color: #ff8300;}
+     90% {color: #0099ff;}
+     100% {color: #ff0c00;}
+}
+@-moz-keyframes disco-animation {
+      0% {color: #ff008c;}
+     10% {color: #ff0000;}
+     20% {color: #ffe900;}
+     30% {color: #000cff;}
+     40% {color: #fff200;}
+     50% {color: #2eff00;}
+     60% {color: #00ffed;}
+     70% {color: #e500ff;}
+     80% {color: #ff8300;}
+     90% {color: #0099ff;}
+     100% {color: #ff0c00;}
+}
+@-ms-keyframes disco-animation {
+      0% {color: #ff008c;}
+     10% {color: #ff0000;}
+     20% {color: #ffe900;}
+     30% {color: #000cff;}
+     40% {color: #fff200;}
+     50% {color: #2eff00;}
+     60% {color: #00ffed;}
+     70% {color: #e500ff;}
+     80% {color: #ff8300;}
+     90% {color: #0099ff;}
+     100% {color: #ff0c00;}
+}
+
+
+/* KK: COPYRIGHT
+---------------------------------------------------------------------------- */
+footer{
+  clear:both;
+  border-top: 1px solid #444;
+}
+
+div#copyright{
+  margin-left: 10%;
+
+}
+
+blockquote {
+  font-family: FontAwesome;
+  font-style: oblique;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  padding-left:0px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+blockquote:before {
+  float: left;
+  font-size: 70px;
+  line-height: 1em;
+  margin-right: 0.5em;
+  content: "\201C";
+}
+blockquote:hover {
+  padding-left:25px;
+}
+
+/* KK: Overige CSS
+---------------------------------------------------------------------------- */
+
+
+
+/* KK: Form
+---------------------------------------------------------------------------- */
+form{
+  width:80%;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0c6b0f;
+}
+input.bluebutton{
+  background-color:#0099FF;
+}
+input.bluebutton:hover{
+  background-color:#045489;
+}
+
+img.imghead{
+  width: 560px;
+}
+
+img.imgright{
+  width: 435px;
+  padding: 10px 0 15px 15px;
+  float: right;
+}
+
+img.imgnewhead{
+  width: 100%;
+}
+
+.rightlink{
+  text-align: right;
+  font-size: 17px;
+}
+section.newsbox p{
+  height:27%;
+}
+
+
+
+/* KK: media screens
+---------------------------------------------------------------------------- */
+@media only screen and (min-width: 1100px) {
+  section.newsbox p{
+    height:27%;
+  }
+  article{
+    border-bottom: 1px solid #000;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  nav#menu {
+    width: 65%;
+  }
+  article{
+    border-bottom: 1px solid #000;
+  }
+
+}
+@media only screen and (max-width: 985px) {
+section{
+      margin-left: 5%
+}
+article{
+  width: 75%;
+}
+}
+
+
+@media only screen and (max-width: 875px) {
+  div#kev-logo{
+        margin-left: 35px;
+  }
+  img.imgnewhead{
+    width:80%;
+  }
+  img.imghead{
+    width:450px;
+  }
+  img.imgright{
+    width:450px;
+  }
+  aside{
+    width:15%;
+  }
+}
+@media only screen and (max-width: 865px) {
+  aside{
+    display:none;
+  }
+  section.newsbox{
+    width:88%;
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+  img.imghead{
+    width:375px;
+  }
+  img.imgright{
+    width:375px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  img.imgnewhead{
+    width:350px;
+  }
+  img.imghead{
+    width:350px;
+  }
+  img.imgright{
+    width:350px;
+  }
+  section.newsbox{
+    display:inline-block;
+  }
+  article.box-1 , article.box-2 , article.box-3{
+    border-right:0px;
+    border-bottom: 1px solid #000;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  nav#menu {
+    width: 100%;
+    top: -80px;
+
+  }
+}
+@media only screen and (max-width: 550px) {
+  img.imghead{
+    width:250px;
+  }
+  section{
+    width:85%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body{
+    margin: 8px 0;
+  }
+  img.imghead{
+    width:200px;
+  }
+  section{
+    width: 90%;
+    margin-left: 2%
+  }
+}
+/*Made by Kevin Kraaijveld*/
