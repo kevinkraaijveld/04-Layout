@@ -47,4 +47,4 @@ Wanneer je een mooi nieuwsportaal hebt gemaakt voor jouw favoriete hobby, kun je
 * [Hoe gebruik ik een media query?](http://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 
 ### Bekijk opdracht
-[Layour](https://www.kevii.nl/opdrachten/04-layout/)
+[Layout](https://www.kevii.nl/opdrachten/04-layout/)
