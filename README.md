@@ -45,3 +45,6 @@ Wanneer je een mooi nieuwsportaal hebt gemaakt voor jouw favoriete hobby, kun je
 * [Voorbeeld webpagina tablet](https://www.jwhuisman.nl/dvc/2016/layout/voorbeelden/home-tablet.jpg)
 * [Voorbeeld webpagina mobiel](https://www.jwhuisman.nl/dvc/2016/layout/voorbeelden/home-mobiel.jpg)
 * [Hoe gebruik ik een media query?](http://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
+
+### Bekijk opdracht
+[Layour](https://www.kevii.nl/opdrachten/04-layout/)
